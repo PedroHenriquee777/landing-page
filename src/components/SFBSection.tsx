@@ -1,4 +1,4 @@
-import Book from "@/assets/img/book.png";
+import Book from "..book.png";
 
 export function SDBSection() {
   return (
