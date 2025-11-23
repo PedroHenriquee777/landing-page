@@ -32,15 +32,15 @@ export function SDBSection() {
           />
         </div>
       </div>
-      <div className="w-full bg-[#FFFFFF] mt-14 rounded-xl p-8 flex justify-center">
+      <div className="w-full bg-background mt-14 rounded-xl p-8 flex justify-center  dark:bg-gray-800 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-xl">
         <div className="flex items-center gap-32">
           <div className="flex items-center gap-4">
             <img
               src={trophy}
               alt="trophy"
-              className="w-34 h-34 object-contain"
+              className="size-34 object-contain"
             />
-            <p className="font-montserrat text-2xl font-bold text-black">
+            <p className="font-montserrat text-2xl font-bold text-black  dark:text-gray-100">
                 Excelência comprovada.
             </p>
           </div>
@@ -49,9 +49,9 @@ export function SDBSection() {
             <img
               src={books} 
               alt="books"
-              className="w-34 h-34 object-contain"
+              className="size-34 object-contain"
             />
-            <p className="font-montserrat text-2xl font-bold text-black">
+            <p className="font-montserrat text-2xl font-bold text-black  dark:text-gray-100">
               Metodologia moderna e eficaz.
             </p>
           </div>
