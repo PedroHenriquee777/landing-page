@@ -2,11 +2,16 @@ import { MapaGoogle } from "../components/MapaGoogle";
 import phone from "../assets/img/phone.png";
 import gmail from "../assets/img/gmail.png";
 import gps from "../assets/img/gps.png";
+import school from "../assets/img/school.jpg"
 
 export function ContactSection() {
   return (
-    <section className="w-full bg-[#E8EEF3] pt-16 pb-10">
-
+    <section className="relative w-full  bg-cover bg-center pt-16 pb-10"
+    style={{backgroundImage: `url(${school})` }}>
+      <div className="absolute inset-0 bg-white/80"/>
+      
+      <div className="relative z-10">
+      
       <h1 className="text-center text-4xl font-extrabold text-[#1A1A1A]">
         ENTRE EM CONTATO CONOSCO.
       </h1>
@@ -30,7 +35,7 @@ export function ContactSection() {
           </p>
         </div>
 
-      </div>
+        </div>
 
       <div className="w-full flex justify-center mt-16 px-6">
         <MapaGoogle />
@@ -39,6 +44,7 @@ export function ContactSection() {
       <footer className="w-full text-center text-white bg-[#0F6B38] py-6 mt-16 text-sm">
         © 2025 Educandário João de La Salle - All Rights Reserved
       </footer>
+    </div>    
     </section>
   );
 }
